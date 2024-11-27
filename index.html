@@ -1,121 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Page Website</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <div class="video-container">
-      <video autoplay muted loop id="background-video">
-        <source
-          src="./assiets/video/5155396-uhd_3840_2160_30fps.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="overlay"></div>
-      <div class="animated-text">
-        <span>F</span><span>o</span><span>r</span><span>m</span><span>a</span
-        ><span>t</span><span>i</span><span>o</span><span>n</span>
-        <span> </span>
-        <span>P</span><span>r</span><span>e</span><span>f</span><span>o</span
-        ><span>r</span><span>m</span><span>a</span><span>t</span><span>i</span
-        ><span>o</span><span>n</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Page Website</title>
+
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="assiets/video/coding on group.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <div class="animated-text">
+      <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span> <span>-</span>
+      <span> </span>
+      <span>P</span><span>r</span><span>é</span><span>f</span><span>o</span><span>r</span><span>m</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span>
+    </div>
+  </div>
+
+  <section id="interview">
+    <h2>interview</h2>
+    <div class="card-container">
+      <div id="card-1" class="card" onclick="expandCard(this)">
+        <img src="assiets/photo/IMG-47c5b8c16977ef95253a523bcd010dea-V.jpg" alt="Svetislav Marijanovic" />
+        <h3>Svetislav Marijanovic</h3>
+        <h4>
+          Java/Javascript Tech Lead & Department manager at Levi9 Technology
+          Services
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+          facere porro tempora deleniti perferendis eius cum, officia
+          distinctio vero corrupti dolor asperiores hic accusantium repellat
+          explicabo alias fuga beatae.
+        </p>
+      </div>
+      <div id="card-2" class="card" onclick="expandCard(this)">
+        <img src="assiets/photo/Marko was up.jpg" alt="Marko Vucic" />
+        <h3>Marko Vucic</h3>
+        <h4>fonction et entrprise</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+          facere porro tempora deleniti perferendis eius cum, officia
+          distinctio vero corrupti dolor asperiores hic accusantium repellat
+          explicabo alias fuga beatae.
+        </p>
+      </div>
+      <div id="card-3" class="card" onclick="expandCard(this)">
+        <img src="assiets/photo/Sebastian_Stan_by_Gage_Skidmore_2_(cropped).jpg" alt="Sebastian Herrera" />
+        <h3>Sebastian Herrera</h3>
+        <h4>fonction et entrprise</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+          facere porro tempora deleniti perferendis eius cum, officia
+          distinctio vero corrupti dolor asperiores hic accusantium repellat
+          explicabo alias fuga beatae.
+        </p>
       </div>
     </div>
 
-    <section id="interview">
-      <h2>interview</h2>
-      <div class="card-container">
-        <div id="card-1" class="card" onclick="expandCard(this)">
-          <img
-            src="/assiets/photo/IMG-47c5b8c16977ef95253a523bcd010dea-V.jpg"
-            alt="Svetislav Marijanovic"
-          />
-          <h3>Svetislav Marijanovic</h3>
-          <h4>
-            Java/Javascript Tech Lead & Department manager at Levi9 Technology
-            Services
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
-            facere porro tempora deleniti perferendis eius cum, officia
-            distinctio vero corrupti dolor asperiores hic accusantium repellat
-            explicabo alias fuga beatae.
-          </p>
-        </div>
-        <div id="card-2" class="card" onclick="expandCard(this)">
-          <img src="/assiets/photo/Marko was up.jpg" alt="Marko Vucic" />
-          <h3>Marko Vucic</h3>
-          <h4>fonction et entrprise</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
-            facere porro tempora deleniti perferendis eius cum, officia
-            distinctio vero corrupti dolor asperiores hic accusantium repellat
-            explicabo alias fuga beatae.
-          </p>
-        </div>
-        <div id="card-3" class="card" onclick="expandCard(this)">
-          <img
-            src="/assiets/photo/Sebastian_Stan_by_Gage_Skidmore_2_(cropped).jpg"
-            alt="Sebastian Herrera"
-          />
-          <h3>Sebastian Herrera</h3>
-          <h4>fonction et entrprise</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
-            facere porro tempora deleniti perferendis eius cum, officia
-            distinctio vero corrupti dolor asperiores hic accusantium repellat
-            explicabo alias fuga beatae.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div id="card-4" class="bigCard">
+      <div class=" left">
+<img src="assiets/photo/1542024400590.jpg" alt="Svetislav Marijanovic" />
+<h3>Svetislav Marijanovic</h3>
+<h4>
+  Java/Javascript Tech Lead & Department manager at Levi9 Technology
+  Services
+</h4>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+  facere porro tempora deleniti perferendis eius cum, officia
+  distinctio vero corrupti dolor asperiores hic accusantium repellat
+  explicabo alias fuga beatae.
+</p>
+</div>
+<div class="right">
 
-    <div id="modal-overlay" onclick="shrinkCard()"></div>
+<ol>
+  <li>
+    <details>
+      <summary>Can you introduce yourself, tell us where you work, and what your position is? </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>What are your main responsibilities in your current position?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Which technologies and programming languages do you use most frequently in your work?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What does a typical workday look like for you?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What are the biggest challenges you face in your job?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you stay updated with the latest technologies and trends in programming?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+
+    <details>
+      <summary> What skills do you consider most important for success in your field?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> Can you describe a project you worked on that was particularly interesting or challenging?
+      </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you work in a team and communicate with other team members or clients?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What advice would you give to someone who wants to become a programmer?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+</ol>
+</div>
+</div>
+<div id="card-5" class="bigCard">
+    <div class=" left">
+<img src="assiets/photo/Marko was up.jpg" alt="Marko Vucic" />
+<h3>Marko Vucic</h3>
+<h4>
+  Java/Javascript Tech Lead & Department manager at Levi9 Technology
+  Services
+</h4>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+  facere porro tempora deleniti perferendis eius cum, officia
+  distinctio vero corrupti dolor asperiores hic accusantium repellat
+  explicabo alias fuga beatae.
+</p>
+</div>
+<div class="right">
+
+<ol>
+  <li>
+    <details>
+      <summary>Can you introduce yourself, tell us where you work, and what your position is? </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>What are your main responsibilities in your current position?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Which technologies and programming languages do you use most frequently in your work?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What does a typical workday look like for you?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What are the biggest challenges you face in your job?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you stay updated with the latest technologies and trends in programming?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+
+    <details>
+      <summary> What skills do you consider most important for success in your field?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> Can you describe a project you worked on that was particularly interesting or challenging?
+      </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you work in a team and communicate with other team members or clients?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What advice would you give to someone who wants to become a programmer?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+</ol>
+</div>
+</div>
+<div id="card-6" class="bigCard">
+  <div class=" left">
+<img src="assiets/photo/Sebastian_Stan_by_Gage_Skidmore_2_(cropped).jpg" alt="Sebastian Herrera" />
+<h3>Sebastian Herrera</h3>
+<h4>
+  Java/Javascript Tech Lead & Department manager at Levi9 Technology
+  Services
+</h4>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
+  facere porro tempora deleniti perferendis eius cum, officia
+  distinctio vero corrupti dolor asperiores hic accusantium repellat
+  explicabo alias fuga beatae.
+</p>
+</div>
+<div class="right">
+
+<ol>
+  <li>
+    <details>
+      <summary>Can you introduce yourself, tell us where you work, and what your position is? </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>What are your main responsibilities in your current position?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Which technologies and programming languages do you use most frequently in your work?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What does a typical workday look like for you?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What are the biggest challenges you face in your job?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you stay updated with the latest technologies and trends in programming?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+
+    <details>
+      <summary> What skills do you consider most important for success in your field?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> Can you describe a project you worked on that was particularly interesting or challenging?
+      </summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> How do you work in a team and communicate with other team members or clients?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary> What advice would you give to someone who wants to become a programmer?</summary>
+      <p class="anwser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi praesentium
+        cupiditate illo doloremque labore, laudantium asperiores nostrum minima exercitationem? Adipisci, magni
+        nihil? Molestiae quas atque excepturi. Eaque, doloribus eum..</p>
+    </details>
+  </li>
+</ol>
+</div>
+</div>
+  </section>
+
+  
 
 
-    <section id="expo">
-        <div id="card-4" class="bigCard"">
-            <div class="left card"> 
-                           <img
-              src="/assiets/photo/IMG-47c5b8c16977ef95253a523bcd010dea-V.jpg"
-              alt="Svetislav Marijanovic"
-            />
-            <h3>Svetislav Marijanovic</h3>
-            <h4>
-              Java/Javascript Tech Lead & Department manager at Levi9 Technology
-              Services
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum
-              facere porro tempora deleniti perferendis eius cum, officia
-              distinctio vero corrupti dolor asperiores hic accusantium repellat
-              explicabo alias fuga beatae.
-            </p>
-          </div>
-          <div class="right">
+  <section id="expo">
 
-            <ol>
-                <li> Can you introduce yourself, tell us where you work, and what your position is?
-                <details>   
-                </details> </li>
-                <li>What are your main responsibilities in your current position?</li>
-                <li>Which technologies and programming languages do you use most frequently in your work?</li>
-                <li>What does a typical workday look like for you?</li>
-                <li>What are the biggest challenges you face in your job?</li>
-                <li>How do you stay updated with the latest technologies and trends in programming?</li>
-                <li>What skills do you consider most important for success in your field?</li>
-                <li>Can you describe a project you worked on that was particularly interesting or challenging?</li>
-                <li>How do you work in a team and communicate with other team members or clients?</li>
-                <li>What advice would you give to someone who wants to become a programmer?</li>
-            </ol>
-          </div>
-        </div>
 
-    </section>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

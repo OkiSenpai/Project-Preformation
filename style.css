@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+h4{
+  margin: 10px;
+}
+.bigCard{
+  display: none;
+}
+
+
+
 .video-container {
   position: relative;
   height: 100vh;
@@ -38,16 +47,26 @@ section {
   flex-wrap: wrap;
 }
 
-.card {
+.card , .left {
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
-  max-width: 400px;
+  max-width: 450px;
   text-align: center;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+ 
+}
+.card{
   cursor: pointer;
+}
+
+
+.left   img {
+  border-radius: 50%;
+width: 100%;
 }
 
 .card img {
@@ -67,6 +86,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 .bigCard {
   display: flex;
@@ -78,6 +98,13 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  list-style: none;
+  text-align: left;
+}
+li{
+  margin: 10px 0 10px 0;
+  font-style: italic;
+  font-size: large;
 }
 #modal-overlay {
   display: none;
@@ -90,13 +117,25 @@ ol {
   z-index: 10;
 }
 
+summary{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+details{
+  border-bottom: 1px solid black;
+}
+li{
+  width: 100%;
+}
+
 .expanded {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
   width: 80%;
-  height: 80%;
+  height:fit-content;
   z-index: 20;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -125,4 +164,11 @@ ol {
   50% {
     transform: scale(1.5);
   }
+}
+.anwser{
+  text-shadow: 5px 5px 10px black;
+  
+}
+#interview{
+  height: 100vh;
 }
