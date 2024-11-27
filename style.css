@@ -268,7 +268,7 @@ li {
 
 .button-89:active {
   background: var(--color);
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -292,4 +292,21 @@ li {
 
 .navLinks a:hover {
   color: #00bcd4;
+}
+
+.bounce-out {
+  animation: bounce-out 2s ease;
+  animation-iteration-count:1;
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
 }

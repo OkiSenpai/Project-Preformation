@@ -8,8 +8,7 @@ const card1 = document.getElementById("card-1");
 const card2 = document.getElementById("card-2");
 const card3 = document.getElementById("card-3");
 
-
-
+// when i click on button add class to display cards.
 function RedisplayCards() {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -19,53 +18,57 @@ function RedisplayCards() {
       bigCards.forEach((bigCard) => {
         bigCard.style.display = "none";
       });
-      bigCards.forEach(bigCard =>{
-        bigCard.classList.remove("bigCardA")
+      bigCards.forEach((bigCard) => {
+        bigCard.classList.remove("bigCardA");
         void bigCard.offsetWidth;
-        
-      })
+      });
     });
   });
 }
 
+//end of adding class function.
+
+// when i click on the card add class to display big cards and display:none to small cards.
+
 function showCard1() {
   bigCard4.style.display = "flex";
-  bigCards.forEach(bigCard =>{
-    bigCard.classList.remove("hinge")
+  bigCards.forEach((bigCard) => {
+    bigCard.classList.remove("hinge");
     bigCard.classList.add("bigCardA");
-    
-  })
+  });
 
   cards.forEach((card) => {
     card.style.display = "none";
   });
 }
 function showCard2() {
-    bigCard5.style.display = "flex";
-    bigCards.forEach(bigCard =>{
-        bigCard.classList.remove("hinge")
-        bigCard.classList.add("bigCardA");
-      })
+  bigCard5.style.display = "flex";
+  bigCards.forEach((bigCard) => {
+    bigCard.classList.remove("hinge");
+    bigCard.classList.add("bigCardA");
+  });
 
-    cards.forEach(card => {
-        card.style.display = "none";
-    })    
+  cards.forEach((card) => {
+    card.style.display = "none";
+  });
 }
 
 function showCard3() {
-    bigCard6.style.display = "flex";
-    bigCards.forEach(bigCard =>{
-        bigCard.classList.remove("hinge");
-        bigCard.classList.add("bigCardA");
-      })
-    cards.forEach(card => {
-        card.style.display = "none";
-    })    
+  bigCard6.style.display = "flex";
+  bigCards.forEach((bigCard) => {
+    bigCard.classList.remove("hinge");
+    bigCard.classList.add("bigCardA");
+  });
+  cards.forEach((card) => {
+    card.style.display = "none";
+  });
 }
+
+// end of fonctions that display big cards and display:none small cards.
+
+//calling functions
 
 RedisplayCards();
 card1.addEventListener("click", () => showCard1());
 card2.addEventListener("click", () => showCard2());
 card3.addEventListener("click", () => showCard3());
-
-
