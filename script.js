@@ -19,6 +19,8 @@ function RedisplayCards() {
       })
       bigCards.forEach(bigCard => {
         bigCard.style.display = "none";
+
+
       })
     })
   })
