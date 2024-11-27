@@ -65,6 +65,22 @@ section {
 .card img {
   width: 100%;
   border-radius: 50%;
+  height: 75%;
+}
+img:hover {
+  border-radius: 0%;
+  animation: border-radius-img 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes border-radius-img {
+  0% {
+    border-radius: 50%;
+  }
+
+  100% {
+    border-radius: 0%;
+  }
 }
 
 .card h3 {
@@ -163,6 +179,7 @@ li {
   animation: bounce-in-right 2s ease;
   animation-iteration-count: 1;
 }
+
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
@@ -174,6 +191,28 @@ li {
   }
   80% {
     transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.button {
+  animation: bounce-in-left 2s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-4000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(0px);
   }
   100% {
     transform: translateX(0);
