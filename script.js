@@ -1,51 +1,71 @@
 const buttons = document.querySelectorAll(".button");
 const cards = document.querySelectorAll(".card");
 const bigCards = document.querySelectorAll(".bigCard");
+const bigCard4 = document.getElementById("card-4");
+const bigCard5 = document.getElementById("card-5");
+const bigCard6 = document.getElementById("card-6");
+const card1 = document.getElementById("card-1");
+const card2 = document.getElementById("card-2");
+const card3 = document.getElementById("card-3");
 
 
-// function RedisplayCards() {
-//   button.addEventListener("click", () =>{
-//     card[0].style.display = "inline";
-//     card[1].style.display = "inline";
-//     card[2].style.display = "inline";
-//   })
-// }
 
 function RedisplayCards() {
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      cards.forEach(card => {
+      cards.forEach((card) => {
         card.style.display = "inline";
-      })
-      bigCards.forEach(bigCard => {
+      });
+      bigCards.forEach((bigCard) => {
         bigCard.style.display = "none";
-
-
+      });
+      bigCards.forEach(bigCard =>{
+        bigCard.classList.remove("bigCardA")
+        void bigCard.offsetWidth;
+        
       })
-    })
+    });
+  });
+}
+
+function showCard1() {
+  bigCard4.style.display = "flex";
+  bigCards.forEach(bigCard =>{
+    bigCard.classList.remove("hinge")
+    bigCard.classList.add("bigCardA");
+    
   })
 
-}
-
-
-
-function showCard(cardId) {
-
-  const allCards = document.querySelectorAll('.bigCard, .card');
-  allCards.forEach(card => {
-    card.style.display = 'none';
+  cards.forEach((card) => {
+    card.style.display = "none";
   });
+}
+function showCard2() {
+    bigCard5.style.display = "flex";
+    bigCards.forEach(bigCard =>{
+        bigCard.classList.remove("hinge")
+        bigCard.classList.add("bigCardA");
+      })
 
-
-  const selectedCard = document.getElementById(cardId);
-  if (selectedCard) {
-    selectedCard.style.display = 'flex';
-  }
+    cards.forEach(card => {
+        card.style.display = "none";
+    })    
 }
 
-
+function showCard3() {
+    bigCard6.style.display = "flex";
+    bigCards.forEach(bigCard =>{
+        bigCard.classList.remove("hinge");
+        bigCard.classList.add("bigCardA");
+      })
+    cards.forEach(card => {
+        card.style.display = "none";
+    })    
+}
 
 RedisplayCards();
-document.getElementById('card-1').addEventListener('click', () => showCard('card-4'));
-document.getElementById('card-2').addEventListener('click', () => showCard('card-5'));
-document.getElementById('card-3').addEventListener('click', () => showCard('card-6'));
+card1.addEventListener("click", () => showCard1());
+card2.addEventListener("click", () => showCard2());
+card3.addEventListener("click", () => showCard3());
+
+

@@ -103,6 +103,8 @@ img:hover {
   align-items: center;
   flex-direction: row;
 }
+
+
 ol {
   display: flex;
   flex-direction: column;
@@ -175,7 +177,7 @@ li {
   }
 }
 
-.bigCard {
+.bigCardA {
   animation: bounce-in-right 2s ease;
   animation-iteration-count: 1;
 }
@@ -269,34 +271,25 @@ li {
   color: #fff;
 }
 
-.hinge {
-  animation: hinge 2s ease infinite;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
 }
-@keyframes hinge {
-  0% {
-    transform: rotate(0);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  20%,
-  60% {
-    transform: rotate(80deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  40% {
-    transform: rotate(60deg);
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  80% {
-    transform: rotate(60deg) translateY(0);
-    opacity: 1;
-    transform-origin: top left;
-    animation-timing-function: ease-in-out;
-  }
-  100% {
-    transform: translateY(700px);
-    opacity: 0;
-  }
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #00bcd4;
 }
