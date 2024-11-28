@@ -58,7 +58,6 @@ section {
 }
 
 .left img {
-  border-radius: 50%;
   width: 100%;
   border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
   animation: fluid-anim 5s infinite linear;
@@ -67,12 +66,12 @@ section {
 
 .card img {
   width: 100%;
-  border-radius: 50%;
   height: 75%;
   border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
   animation: fluid-anim 5s infinite linear;
   z-index: 1;
 }
+
 
 @keyframes fluid-anim {
   0% {
@@ -112,6 +111,7 @@ section {
   align-items: center;
   flex-direction: row;
 }
+
 
 ol {
   display: flex;
@@ -182,7 +182,7 @@ li {
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
-    transform: translateX(2000px);
+    transform: translateY(2000px);
   }
   60% {
     opacity: 1;
