@@ -60,26 +60,35 @@ section {
 .left img {
   border-radius: 50%;
   width: 100%;
+  border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
+  animation: fluid-anim 5s infinite linear;
+  z-index: 1;
 }
 
 .card img {
   width: 100%;
   border-radius: 50%;
   height: 75%;
-}
-img:hover {
-  border-radius: 0%;
-  animation: border-radius-img 1s;
-  animation-iteration-count: 1;
+  border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
+  animation: fluid-anim 5s infinite linear;
+  z-index: 1;
 }
 
-@keyframes border-radius-img {
+@keyframes fluid-anim {
   0% {
-    border-radius: 50%;
+    border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
   }
-
+  25% {
+    border-radius: 45% 55% 48% 52% / 60% 36% 64% 40%;
+  }
+  50% {
+    border-radius: 56% 44% 28% 72% / 46% 63% 37% 54%;
+  }
+  75% {
+    border-radius: 62% 38% 37% 63% / 39% 32% 68% 61%;
+  }
   100% {
-    border-radius: 0%;
+    border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
   }
 }
 
@@ -103,7 +112,6 @@ img:hover {
   align-items: center;
   flex-direction: row;
 }
-
 
 ol {
   display: flex;
@@ -140,17 +148,6 @@ li {
   width: 100%;
 }
 
-.expanded {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  width: 80%;
-  height: fit-content;
-  z-index: 20;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
 .animated-text {
   position: absolute;
   top: 50%;
@@ -271,7 +268,6 @@ li {
   color: #ffffff;
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -296,17 +292,21 @@ li {
 
 .bounce-out {
   animation: bounce-out 2s ease;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
 }
 @keyframes bounce-out {
-  0% { transform: scale(1); }
-  25% { transform: scale(.95); }
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
   50% {
     opacity: 1;
     transform: scale(1.1);
   }
   100% {
     opacity: 0;
-    transform: scale(.3);
-  } 
+    transform: scale(0.3);
+  }
 }
