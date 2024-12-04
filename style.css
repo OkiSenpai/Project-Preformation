@@ -339,3 +339,41 @@ li {
 #imgFilm-2:hover {
   content: url(assiets/gifs/SMsb.gif);
 }
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
