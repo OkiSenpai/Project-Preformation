@@ -17,6 +17,8 @@ function removeClass() {
   });
 }
 
+
+
 // Small cards display:none
 function cardsNone() {
   cards.forEach((card) => {
