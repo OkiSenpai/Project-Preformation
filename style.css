@@ -141,16 +141,6 @@ li {
   font-style: italic;
   font-size: large;
 }
-#modalCverlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 99;
-}
 
 summary {
   margin-bottom: 10px;
@@ -246,10 +236,9 @@ li {
   width: 100px;
 }
 
-/* CSS */
 .button-89 {
-  --b: 3px; /* border thickness */
-  --s: 0.45em; /* size of the corner */
+  --b: 3px;
+  --s: 0.45em;
   --color: #373b44;
   cursor: pointer;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
@@ -308,36 +297,12 @@ li {
   color: #00bcd4;
 }
 
-.bounce-out {
-  animation: bounce-out 2s ease;
-  animation-iteration-count: 1;
-}
-@keyframes bounce-out {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.95);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-}
-
 #expo {
   background-color: #f4f4f4;
 }
 .textFilm {
   width: 60%;
   margin: 25px auto;
-}
-#imgFilm-2:hover {
-  content: url(assiets/gifs/SMsb.gif);
 }
 
 footer {
@@ -376,4 +341,129 @@ footer {
 
 .footer-text a:hover {
   text-decoration: underline;
+}
+
+h1 {
+  position: absolute;
+  width: 720px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: white;
+  display: flex;
+}
+
+@keyframes typingAndReplacing {
+  0% {
+    content: "";
+  }
+  5% {
+    content: "P";
+  }
+  10% {
+    content: "Pr";
+  }
+  15% {
+    content: "Pro";
+  }
+  20% {
+    content: "Proj";
+  }
+  25% {
+    content: "Proje";
+  }
+  30% {
+    content: "Projet";
+  }
+  35% {
+    content: "Projet P";
+  }
+  40% {
+    content: "Projet Pr";
+  }
+  45% {
+    content: "Projet Pre";
+  }
+  50% {
+    content: "Projet Pref";
+  }
+  55% {
+    content: "Projet Prefo";
+  }
+  60% {
+    content: "Projet Prefor";
+  }
+  65% {
+    content: "Projet Prefo";
+  }
+  68% {
+    content: "Projet Pref";
+  }
+  71% {
+    content: "Projet Pre";
+  }
+  74% {
+    content: "Projet Pr";
+  }
+  76% {
+    content: "Projet P";
+  }
+  78% {
+    content: "Projet Pr";
+  }
+  82% {
+    content: "Projet Pré";
+  }
+  85% {
+    content: "Projet Préf";
+  }
+  88% {
+    content: "Projet Préfo";
+  }
+  90% {
+    content: "Projet Préfor";
+  }
+  92% {
+    content: "Projet Préform";
+  }
+  94% {
+    content: "Projet Préforma";
+  }
+  96% {
+    content: "Projet Préformat";
+  }
+  98% {
+    content: "Projet Préformati";
+  }
+  100% {
+    content: "Projet Préformation";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: white;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typingAndReplacing 6s 1 1s;
+  animation-fill-mode: forwards;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 2px solid var(--caret);
+  animation: blink 0.7s step-end infinite;
+  animation-fill-mode: forwards;
 }
