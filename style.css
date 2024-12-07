@@ -136,7 +136,7 @@ ol {
 li {
   margin: 10px 0 10px 0;
   font-style: italic;
-  font-size: large;
+  font-size: medium;
 }
 
 summary {
@@ -223,9 +223,7 @@ li {
   }
 }
 
-.anwser {
-  text-shadow: 5px 5px 10px black;
-}
+
 #interview {
   min-height: 100vh;
 }
