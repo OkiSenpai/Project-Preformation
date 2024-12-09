@@ -8,6 +8,34 @@ const card1 = document.getElementById("card-1");
 const card2 = document.getElementById("card-2");
 const card3 = document.getElementById("card-3");
 
+
+const developers = [
+  {
+    id: 1,
+    name: "Svetislav Marijanovic",
+    url: "assiets/photo/IMG-47c5b8c16977ef95253a523bcd010dea-V.jpg",
+    title: "Java/Javascript Tech Lead & Department manager at Levi9 Technology Services",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+  },
+  {
+    id: 2,
+    name: "Marko Vucic",
+    url: "assiets/photo/marko.jpg",
+    title: "Full Stack Developer at Some Tech Company",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+  },
+  {
+    id: 3,
+    name: "Sebastian Herrera",
+    url: "assiets/photo/sebastian.jpg",
+    title: "Frontend Engineer at Some Other Company",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+  },
+];
+
+
+
+
 // when i click on the card add class to display big cards and display:none to small cards.
 //remove claass of bigCard
 function removeClass() {
@@ -16,13 +44,6 @@ function removeClass() {
     bigCard.classList.add("bigCardA");
   });
 }
-
-
-
-
-
-
-
 
 // Small cards display:none
 function cardsNone() {
@@ -35,23 +56,20 @@ function showCard1() {
   bigCard4.style.display = "flex";
   removeClass();
   cardsNone();
-
 }
 function showCard2() {
   bigCard5.style.display = "flex";
-  removeClass()
+  removeClass();
   cardsNone();
 }
 
-
 function showCard3() {
   bigCard6.style.display = "flex";
-  removeClass()
+  removeClass();
   cardsNone();
 }
 
 // end of fonctions that display big cards and display:none small cards.
-
 
 // when i click on button add class to display cards.
 function RedisplayCards() {
@@ -72,7 +90,6 @@ function RedisplayCards() {
 }
 
 //end of adding class function.
-
 
 //calling functions
 
