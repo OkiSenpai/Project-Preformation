@@ -1,3 +1,15 @@
+:root {
+  --scale-factor: 1.07;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(var(--scale-factor));
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +75,7 @@ section {
   padding: 20px;
   max-width: 330px;
   max-height: 550px;
+  overflow: hidden;
 }
 
 .card {
@@ -222,7 +235,6 @@ li {
     transform: translateX(0);
   }
 }
-
 
 #interview {
   min-height: 100vh;
@@ -461,4 +473,7 @@ h1 {
   border-right: 2px solid var(--caret);
   animation: blink 0.7s step-end infinite;
   animation-fill-mode: forwards;
+}
+.textFilm {
+  font-size: larger;
 }
