@@ -220,9 +220,7 @@ li {
   }
 }
 
-#interview {
-  min-height: 100vh;
-}
+
 .button {
   width: 100px;
 }
@@ -460,21 +458,6 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-.cardFilm {
-  display: flex;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  max-width: 60%;
-  max-height: 550px;
-  overflow: hidden;
-  font-size: larger;
-  box-sizing: content-box;
-  padding-right: 16px;
-  scrollbar-gutter: stable;
-  transition: all 0.3s ease;
-}
 .cardFilm img {
   height: 100%;
   min-width: 40%;
@@ -495,4 +478,119 @@ h1 {
 
 .cardFilm::-webkit-scrollbar-thumb:hover {
   background: #aaa;
+}
+.filmDescription {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.filmText {
+  text-align: justify;
+  padding: 50px;
+  font-size: larger;
+}
+.h3film {
+  font-size: xxx-large;
+}
+
+.cardFilm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 60%;
+  max-height: 550px;
+  min-height: 550px;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardFilm:hover {
+  transform: scale(1.1);
+}
+
+.imgBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardFilm:hover .imgBackground {
+  opacity: 0;
+}
+
+.cardFilm:hover .videoBackground {
+  opacity: 1;
+}
+
+.filmDescription {
+  position: relative;
+  z-index: 2;
+}
+#filmCard-1:hover .filmDescription {
+  display: none;
+}
+.myTopMovies {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.cardTopMovies {
+  height: 450px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+.topMoviesImg {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+}
+#filmCard-2:hover{
+  background-image: url("assiets/film photo/myNameIsKhanLarge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#filmCard-2:hover img{
+  display: none;
+}
+
+
+#movie-1:hover, #movie-2:hover, #movie-3:hover, #movie-4:hover {
+   transform: scale(1.5);
+}
+
+.xxx-l{
+  font-size: xxx-large;
 }
