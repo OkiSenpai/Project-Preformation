@@ -76,7 +76,119 @@ const movies = [
     image: "/assiets/film photo/pianist.jpg",
     rating: "8.5/10",
   },
-]
+  {
+    id: "movie-5",
+    title: "The Sixth Sense",
+    year: 1999,
+    description: "Un garçon qui communique avec les esprits cherche l'aide d'un psychologue pour enfants découragé.",
+    url: "https://www.youtube.com/watch?v=VG9AGf66tXM",
+    image: "/assiets/film photo/TheSixthSense.webp",
+    rating: "8.1/10",
+  },
+  {
+    id: "movie-6",
+    title: "Shutter Island",
+    year: 2010,
+    description: "En 1954, un marshal américain enquête sur la disparition d'un meurtrier qui s'est échappé d'un hôpital psychiatrique pour criminels.",
+    url: "https://www.youtube.com/watch?v=5iaYLCiq5RM",
+    image: "/assiets/film photo/ShutterIsland.jpg",
+    rating: "8.2/10",
+  },
+  {
+    id: "movie-14",
+    title: "The Salesman",
+    year: 2016,
+    description: "Un couple iranien est contraint de quitter son appartement en raison de travaux dangereux sur leur bâtiment. Un incident lié à l'ancien locataire va bouleverser leur vie.",
+    url: "https://www.youtube.com/watch?v=rpYgB1l5u8k",
+    image: "/assiets/film photo/TheSalesman.jpg",
+    rating: "7.8/10",
+  },
+  {
+    id: "movie-7",
+    title: "The Pursuit of Happyness",
+    year: 2006,
+    description: "Un vendeur en difficulté prend la garde de son fils alors qu'il est sur le point de commencer une entreprise professionnelle qui change la vie.",
+    url: "https://www.youtube.com/watch?v=89Kq8SDyvfg",
+    image: "/assiets/film photo/ThePursuitOfHappyness.jpg",
+    rating: "8.0/10",
+  },
+  {
+    id: "movie-8",
+    title: "Seven Pounds",
+    year: 2008,
+    description: "Un homme avec un secret fatal entreprend un voyage extraordinaire de rédemption en changeant à jamais la vie de sept étrangers.",
+    url: "https://www.youtube.com/watch?v=kgfl49Nw1j0",
+    image: "/assiets/film photo/SevenPounds.jpg",
+    rating: "7.6/10",
+  },
+  {
+    id: "movie-9",
+    title: "Forrest Gump",
+    year: 1994,
+    description: "Les présidences de Kennedy et Johnson, la guerre du Vietnam, le scandale du Watergate et d'autres événements historiques se déroulent du point de vue d'un homme de l'Alabama avec un QI de 75.",
+    url: "https://www.youtube.com/watch?v=bLvqoHBptjg",
+    image: "/assiets/film photo/ForrestGump.webp",
+    rating: "8.8/10",
+  },
+  {
+    id: "movie-10",
+    title: "The Green Mile",
+    year: 1999,
+    description: "La vie des gardiens du couloir de la mort est affectée par l'un de leurs détenus : un homme noir accusé de meurtre et de viol d'enfants, mais qui possède un don mystérieux.",
+    url: "https://www.youtube.com/watch?v=Ki4haFrqSrw",
+    image: "/assiets/film photo/TheGreenMile.jpg",
+    rating: "8.6/10",
+  },
+  {
+    id: "movie-16",
+    title: "Capernaum",
+    year: 2018,
+    description: "Un garçon libanais poursuit ses parents pour le 'crime' de lui avoir donné la vie. Le film suit son parcours alors qu'il fuit ses parents négligents et survit dans les rues.",
+    url: "https://www.youtube.com/watch?v=ULUo0048xZE",
+    image: "/assiets/film photo/Capernaum.jpg",
+    rating: "8.4/10",
+  },
+  {
+    id: "movie-11",
+    title: "12 Years a Slave",
+    year: 2013,
+    description: "Basé sur une histoire vraie, ce film raconte la lutte de Solomon Northup, un homme noir libre du nord de l'État de New York, qui est kidnappé et vendu en esclavage.",
+    url: "https://www.youtube.com/watch?v=z02Ie8wKKRg",
+    image: "/assiets/film photo/12YearsASlave.jpg",
+    rating: "8.1/10",
+  },
+  {
+    id: "movie-12",
+    title: "City of God",
+    year: 2002,
+    description: "L'histoire de la croissance du crime organisé dans les favelas de Rio de Janeiro, vue à travers les yeux d'un jeune photographe.",
+    url: "https://www.youtube.com/watch?v=dcUOO4Itgmw",
+    image: "/assiets/film photo/CityOfGod.jpg",
+    rating: "8.6/10",
+  },
+  {
+    id: "movie-13",
+    title: "A Separation",
+    year: 2011,
+    description: "Un couple iranien se sépare, mais les complications surviennent lorsqu'ils se disputent la garde de leur fille et les soins du père malade.",
+    url: "https://www.youtube.com/watch?v=58Onuy5USTc",
+    image: "/assiets/film photo/ASeparation.jpg",
+    rating: "8.3/10",
+  },
+  {
+    id: "movie-15",
+    title: "Ghajini",
+    year: 2008,
+    description: "Un homme souffrant d'amnésie à court terme utilise des notes et des tatouages pour traquer l'homme qu'il pense être responsable de la mort de sa bien-aimée.",
+    url: "https://www.youtube.com/watch?v=D7rjLQuW2nY",
+    image: "/assiets/film photo/Ghajini.jpg",
+    rating: "7.3/10",
+  },
+  
+  
+  
+  
+];
 
 // creating cards from list movies!
 movies.forEach(movie =>{
@@ -181,7 +293,7 @@ cardFilm1.addEventListener("mouseover", () => {
         });
         bigCards.forEach((bigCard) => {
           bigCard.classList.remove("bigCardA");
-          void bigCard.offsetWidth;
+         
         });
       });
     });
