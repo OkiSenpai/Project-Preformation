@@ -25,6 +25,7 @@ section {
 
 h4 {
   margin: 10px;
+  font-size: x-large;
 }
 
 .videoContainer {
@@ -192,6 +193,10 @@ li {
   }
 }
 
+.h3film{
+  color: gold;
+}
+
 .bigCardA {
   animation: bounce-in-right 2s ease;
   animation-iteration-count: 1;
@@ -201,21 +206,29 @@ li {
   animation: bounce-in-right-2 ease;
   animation-iteration-count: 1;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 20%;
 }
 
 #filmCard-2 {
   animation: bounce-in-left ease;
   animation-iteration-count: 1;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 20%;
 }
 #filmCard-3 {
   animation: bounce-in-right-2 2s ease forwards;
   animation-iteration-count: 1;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 20%;
 }
+
+.textFilm{
+  animation: rotate-in-down-left  2s ease forwards;
+  animation-iteration-count: 1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
 
 @keyframes bounce-in-right {
   0% {
@@ -270,11 +283,14 @@ li {
 .button {
   width: 100px;
 }
+.anwser{
+  font-size: larger;
+}
 
 .button-89 {
   --b: 3px;
   --s: 0.45em;
-  --color: #373b44;
+  --color: white;
   cursor: pointer;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
@@ -369,7 +385,7 @@ footer {
 
 .footer-text {
   margin-top: 10px;
-  color: #333;
+  color: white;
   font-size: 14px;
 }
 
