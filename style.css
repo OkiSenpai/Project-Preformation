@@ -2,12 +2,12 @@
   --scale-factor: 1.07;
 }
 body {
-  background-color: #121212;
+  background-color: #201a23;
   color: white;
 }
 
 section {
-  background-color: #121212;
+  background-color: #201a23;
 }
 
 .card img {
@@ -25,7 +25,13 @@ section {
 
 h4 {
   margin: 10px;
+}
+.podnaslovfilm {
   font-size: x-large;
+}
+
+.h4TopMovies {
+  font-size: larger;
 }
 
 .videoContainer {
@@ -73,13 +79,15 @@ section {
 
 .card,
 .left {
-  background: #2a2a2a;
+  background: #2e2532;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
-  max-width: 400px;
-
+  max-width: 360px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -98,7 +106,7 @@ section {
 
 .card img {
   width: 100%;
-  height: 75%;
+  height: 60%;
   border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
   animation: fluid-anim 5s infinite linear;
   z-index: 1;
@@ -126,10 +134,6 @@ section {
   margin: 10px 0;
 }
 
-.card p {
-  color: #666;
-}
-
 .right {
   flex-direction: column;
   align-items: center;
@@ -149,17 +153,16 @@ ol {
 }
 li {
   margin: 10px 0 10px 0;
-  font-style: italic;
   font-size: medium;
 }
 
 summary {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: larger;
+  font-size: large;
 }
 details {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
 }
 li {
   width: 100%;
@@ -193,7 +196,7 @@ li {
   }
 }
 
-.h3film{
+.h3film {
   color: gold;
 }
 
@@ -222,13 +225,12 @@ li {
   animation-range: entry 0% cover 20%;
 }
 
-.textFilm{
-  animation: rotate-in-down-left  2s ease forwards;
+.textFilm {
+  animation: rotate-in-down-left 2s ease forwards;
   animation-iteration-count: 1;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
 }
-
 
 @keyframes bounce-in-right {
   0% {
@@ -283,7 +285,7 @@ li {
 .button {
   width: 100px;
 }
-.anwser{
+.anwser {
   font-size: larger;
 }
 
@@ -342,17 +344,19 @@ li {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
+  font-family: "poppins";
 }
 
 .navLinks a:hover {
-  color: #00bcd4;
+  color: gold;
 }
 
 #expo {
-  background-color: #121212;
+  background-color: #2e2532;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "poppins";
 }
 .textFilm {
   width: 60%;
@@ -361,7 +365,7 @@ li {
 }
 
 footer {
-  background-color: #121212;
+  background-color: #201a23;
   padding: 20px;
   text-align: center;
 
@@ -400,13 +404,14 @@ footer {
 
 h1 {
   position: absolute;
-  width: 720px;
+  width: 760px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5em;
   color: white;
   display: flex;
+  font-family: "poppins";
 }
 
 @keyframes typingAndReplacing {
@@ -553,7 +558,6 @@ h1 {
 .filmText {
   text-align: justify;
   padding: 50px;
-  font-size: larger;
 }
 .h3film {
   font-size: xxx-large;
@@ -564,7 +568,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a2a2a;
+  background: #201a23;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -572,7 +576,6 @@ h1 {
   max-height: 550px;
   min-height: 550px;
   overflow: hidden;
-  padding: 16px;
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
 }
@@ -624,7 +627,7 @@ h1 {
   display: flex;
   width: 90%;
   position: relative;
-  height: 550px;
+  height: 640px;
   align-items: center;
   overflow: hidden;
 }
@@ -691,11 +694,14 @@ h1 {
 #movie-16 {
   animation-delay: calc(40s / 16 * (16 - 16) * -1);
 }
+.topMovieDescrption {
+  font-size: small;
+}
 
 .cardTopMovies {
-  height: 450px;
+  height: 480px;
   width: 300px;
-  background: #2a2a2a;
+  background: #201a23;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -751,5 +757,9 @@ h1 {
   margin: 0 auto;
   text-align: center;
   width: 60%;
-  font-size: xx-large;
+  font-size: x-large;
+  font-family: "poppins";
+}
+.conclutuion {
+  margin-bottom: 25px;
 }
