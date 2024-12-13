@@ -112,7 +112,7 @@ section {
   animation: fluid-anim 5s infinite linear;
   z-index: 1;
 }
-.card video {
+.bigCard video {
   width: 100%;
   height: 60%;
   border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
@@ -776,15 +776,6 @@ h1 {
   object-fit: cover;
   display: none;
   z-index: 1;
-}
-
-.card:hover .video {
-  display: block;
-  scale: 1.1;
-}
-
-.card:hover .img {
-  display: none;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {

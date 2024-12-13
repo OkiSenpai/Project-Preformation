@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const card3 = document.getElementById("card-3");
   const cardFilm1 = document.getElementById("filmCard-1");
   const video = document.querySelector(".videoBackground");
-  const video1 = document.querySelector(".video");
+  const video1 = document.querySelector("#videoSveta");
   const video2 = document.querySelector("#videoMarko");
   const video3 = document.querySelector("#videoSeba");
   const myTopMovies = document.querySelector(".myTopMovies");
@@ -239,22 +239,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //video start on hover  filmCard
 
-  card1.addEventListener("mouseover", () => {
+  bigCard4.addEventListener("mouseover", () => {
     video1.play();
   })
-  card1.addEventListener("mouseout", () => {
+  bigCard4.addEventListener("mouseout", () => {
     video1.pause();
   });
-  card2.addEventListener("mouseover", () => {
+  bigCard5.addEventListener("mouseover", () => {
     video2.play();
   })
-  card2.addEventListener("mouseout", () => {
+  bigCard5.addEventListener("mouseout", () => {
     video2.pause();
   });
-  card3.addEventListener("mouseover", () => {
+  bigCard6.addEventListener("mouseover", () => {
     video3.play();
   })
-  card3.addEventListener("mouseout", () => {
+  bigCard6.addEventListener("mouseout", () => {
     video3.pause();
   });
 
