@@ -2,10 +2,10 @@
 ## Description du proj
   
 
-## Contenu:
+## Contenu :
  - Interview les 3 devs à fin de pouvoir mieux commprendre c'est quoi vraiment le metier webdev
- -Expostion Bruxelles
- -Ma conclution de la formation et metier 
+ - Expostion Bruxelles
+ - Ma conclution de la formation et metier 
 ## Technologies
 Le projet utilise les technologies suivantes :
 
