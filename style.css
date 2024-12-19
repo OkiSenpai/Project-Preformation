@@ -12,6 +12,8 @@ section {
 
 .card img {
   transition: transform 0.3s ease;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .card:hover img {
@@ -84,7 +86,6 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  padding: 20px;
   max-width: 360px;
   font-family: "Poppins", serif;
   font-weight: 400;
@@ -103,8 +104,6 @@ section {
 .bigCard video {
   width: 100%;
   height: 60%;
-  border-radius: 39% 61% 55% 45% / 44% 37% 63% 56%;
-  animation: fluid-anim 5s infinite linear;
   z-index: 1;
 }
 
