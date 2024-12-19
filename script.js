@@ -14,29 +14,190 @@ document.addEventListener("DOMContentLoaded", () => {
   const video2 = document.querySelector("#videoMarko");
   const video3 = document.querySelector("#videoSeba");
   const myTopMovies = document.querySelector(".myTopMovies");
+  const cardContainerDev = document.querySelector(".cardContainer");
+
+
+  const questions = [
+    [
+      {
+        id: 1,
+        question: "Can you introduce yourself, tell us where you work, and what your position is?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 2,
+        question: "What are your main responsibilities in your current position?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 3,
+        question: "Which technologies and programming languages do you use most frequently in your work?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 4,
+        question: "What does a typical workday look like for you?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 5,
+        question: "What are the biggest challenges you face in your job?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 6,
+        question: "How do you stay updated with the latest technologies and trends in programming?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 7,
+        question: "What skills do you consider most important for success in your field?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 8,
+        question: "Can you describe a project you worked on that was particularly interesting or challenging?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 9,
+        question: "How do you work in a team and communicate with other team members or clients?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 10,
+        question: "What advice would you give to someone who wants to become a programmer?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    [
+      {
+        id: 1,
+        question: "Can you introduce yourself, tell us where you work, and what your position is?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 2,
+        question: "What are your main responsibilities in your current position?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 3,
+        question: "Which technologies and programming languages do you use most frequently in your work?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 4,
+        question: "What does a typical workday look like for you?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 5,
+        question: "What are the biggest challenges you face in your job?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 6,
+        question: "How do you stay updated with the latest technologies and trends in programming?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 7,
+        question: "What skills do you consider most important for success in your field?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 8,
+        question: "Can you describe a project you worked on that was particularly interesting or challenging?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 9,
+        question: "How do you work in a team and communicate with other team members or clients?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 10,
+        question: "What advice would you give to someone who wants to become a programmer?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    [
+      {
+        id: 1,
+        question: "Can you introduce yourself, tell us where you work, and what your position is?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 2,
+        question: "What are your main responsibilities in your current position?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 3,
+        question: "Which technologies and programming languages do you use most frequently in your work?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 4,
+        question: "What does a typical workday look like for you?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 5,
+        question: "What are the biggest challenges you face in your job?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 6,
+        question: "How do you stay updated with the latest technologies and trends in programming?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 7,
+        question: "What skills do you consider most important for success in your field?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 8,
+        question: "Can you describe a project you worked on that was particularly interesting or challenging?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 9,
+        question: "How do you work in a team and communicate with other team members or clients?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        id: 10,
+        question: "What advice would you give to someone who wants to become a programmer?",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+  ];
 
 
   const developers = [
     {
-      id: 1,
+      id: "card-1",
       name: "Svetislav Marijanovic",
       url: "assiets/photo/IMG-47c5b8c16977ef95253a523bcd010dea-V.jpg",
       title: "Java/Javascript Tech Lead & Department manager at Levi9 Technology Services",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+      description: " Un bon ami à moi qui est ingénieur IT Fullstack diplômé de l'université 'Faculty Of Technical Sciences' en Serbie.",
     },
     {
-      id: 2,
+      id: "card-2",
       name: "Marko Vucic",
-      url: "assiets/photo/marko.jpg",
-      title: "Full Stack Developer at Some Tech Company",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+      url: "assiets/photo/MarkoNekad.JPG",
+      title: "full-stack chez Synechron",
+      description: "Également un bon ami à moi qui a fait sport et éducation physique dans une fac en Serbie, il ne s'est pas retrouvé dedans donc il s'est redirigé vers la programmation. Actuellement employé Fullstack orionnté Back-end.",
     },
     {
-      id: 3,
+      id: "card-3",
       name: "Sebastian Herrera",
-      url: "assiets/photo/sebastian.jpg",
-      title: "Frontend Engineer at Some Other Company",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum facere porro tempora deleniti perferendis eius cum, officia distinctio vero corrupti dolor asperiores hic accusantium repellat explicabo alias fuga beatae.",
+      url: "assiets/photo/seba1.webp",
+      title: "Full-stack chez Glimpact",
+      description: "Mon meilleur ami à Bruxelles, il a fait une formation à BeCode et actuellement il travaille comme fullstack dévelopeur.",
     },
   ];
 
@@ -192,6 +353,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   ];
+
+  developers.forEach(developer => {
+
+    //creating card for develpoers
+    const cardDev = document.createElement("div");
+    cardDev.classList = "card";
+    cardDev.id = developer.id;
+
+    // Creating img
+    const imgDev = document.createElement("img");
+    imgDev.classList = "img";
+    imgDev.src = developer.url;
+
+    //creating h3 for names
+    const h3Dev = document.createElement("h3");
+    h3Dev.textContent = developer.name;
+    // Creating h4 for job description
+    const h4Dev = document.createElement("h4");
+    h4Dev.textContent = developer.title;
+    // Creationg p tag for description
+
+    const pDev = document.createElement("p");
+    pDev.textContent = developer.description;
+
+    cardDev.appendChild(imgDev);
+    cardDev.appendChild(h3Dev);
+    cardDev.appendChild(h4Dev);
+    cardDev.appendChild(pDev);
+
+    cardContainerDev.appendChild(cardDev);
+  })
+
+
 
   // creating cards from list movies!
   movies.forEach(movie => {
