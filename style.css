@@ -94,6 +94,10 @@ section {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+.navTittle:hover {
+  scale: 1.5;
+}
+
 .card {
   cursor: pointer;
   max-height: 600px;
