@@ -1,179 +1,178 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".button");
-  const cards = document.querySelectorAll(".card");
-  const bigCards = document.querySelectorAll(".bigCard");
-  const bigCard4 = document.getElementById("card-4");
-  const bigCard5 = document.getElementById("card-5");
-  const bigCard6 = document.getElementById("card-6");
-  const card1 = document.getElementById("card-1");
-  const card2 = document.getElementById("card-2");
-  const card3 = document.getElementById("card-3");
-  const cardFilm1 = document.getElementById("filmCard-1");
-  const video = document.querySelector(".videoBackground");
-  const video1 = document.querySelector("#videoSveta");
-  const video2 = document.querySelector("#videoMarko");
-  const video3 = document.querySelector("#videoSeba");
-  const myTopMovies = document.querySelector(".myTopMovies");
-  const cardContainerDev = document.querySelector(".cardContainer");
+const buttons = document.querySelectorAll(".button");
+
+const bigCards = document.querySelectorAll(".bigCard");
+const bigCard4 = document.getElementById("card-4");
+const bigCard5 = document.getElementById("card-5");
+const bigCard6 = document.getElementById("card-6");
+
+const cardFilm1 = document.getElementById("filmCard-1");
+const video = document.querySelector(".videoBackground");
+const video1 = document.querySelector("#videoSveta");
+const video2 = document.querySelector("#videoMarko");
+const video3 = document.querySelector("#videoSeba");
+const myTopMovies = document.querySelector(".myTopMovies");
+const cardContainerDev = document.querySelector(".cardContainer");
 
 
-  const questions = [
-    [
+
+const questions = {
+    dev1:[
       {
-        id: 1,
+        
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
         answer: "Je suis Svetislav Marjanović, originaire de Serbie. Je travaille en tant que Technical Lead et responsable manageur de département chez Levi9.",
       },
       {
-        id: 2,
+        
         question: "Quelles sont vos principales responsabilités dans votre poste actuel",
         answer: "Mes principales responsabilités actuelles incluent la livraison de projets, la conception de solutions techniques, la conception d’architectures ainsi que le support et le développement des membres de l’équipe.",
       },
       {
-        id: 3,
+      
         question: "Quelles technologies et langages de programmation utilisez-vous le plus fréquemment dans votre travail?",
         answer: "Sur le projet actuel, j’utilise AWS, ReactJS, Storybook, NodeJS, Java, SpringBoot et PostgreSQL.",
       },
       {
-        id: 4,
+        
         question: "À quoi ressemble une journée de travail typique pour vous?",
         answer: "Comme nous utilisons la méthodologie agile Scrum, ma journée de travail commence par une réunion « daily », où nous faisons des mises à jour et organisons le travail planifié. Si d’autres réunions Scrum(planification, rétrospective, raffinement, démonstration) sont prévues, nous les abordons en plus du travail de programmation habituel.",
       },
       {
-        id: 5,
+        
         question: "Quels sont les plus grands défis auxquels vous êtes confronté dans votre travail?",
         answer: "Le plus grand défi est de moderniser constamment les projets conformément aux dernières mises à jour, ce qui implique un apprentissage continu, le suivi des tendances, et la formation des équipes pour s’adapter.",
       },
       {
-        id: 6,
+        
         question: "Comment restez-vous à jour avec les dernières technologies et tendances en programmation?",
         answer: "Je suis des articles d’actualité, des magazines spécialisés, des documentations et des publications sur les réseaux sociaux.",
       },
       {
-        id: 7,
+        
         question: "Quelles compétences considérez-vous comme les plus importantes pour réussir dans votre domaine?",
         answer: "Patience, persévérance, désir de perfectionnement, compétences en communication.",
       },
       {
-        id: 8,
+        
         question: "Pouvez-vous décrire un projet sur lequel vous avez travaillé et qui était particulièrement intéressant ou difficile?",
         answer: "Je travaille actuellement sur un projet B2B pour une entreprise mondiale de mode. Basé sur un logiciel que nous développons depuis 4 ans, nous gérons efficacement les commandes, effectuons les paiements pour les vêtements, suivons les analyses et générons des rapports.",
       },
       {
-        id: 9,
+        
         question: "Comment travaillez-vous en équipe et communiquez-vous avec les autres membres de l'équipe ou les clients?",
         answer: "L’équipe est généralement composée d’un mélange de différents niveaux de séniorité, toujours avec un Team Lead principal et un Delivery Manager. La communication se fait formellement via les réunions Scrum et informellement par des appels ad hoc si nécessaire.",
       },
       {
-        id: 10,
+        
         question: "Quel conseil donneriez-vous à quelqu'un qui veut devenir programmeur?",
         answer: "Ne courez pas après l’argent dès le début, mais concentrez-vous sur l’acquisition de connaissances. Les  efforts et le travail porteront leurs  l’apprentissage et de rester toujours engagé dans l’amélioration personnelle.",
       },
     ],
-    [
+  dev2: [
       {
-        id: 1,
+        
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
         answer: "Je suis Marko, je travaille chez Rockdata en tant que développeur full-stack.",
       },
       {
-        id: 2,
+        
         question: "Quelles sont vos principales responsabilités dans votre poste actuel",
         answer: "Concevoir des solutions pour les demandes des clients et les réaliser.",
       },
       {
-        id: 3,
+        
         question: "Quelles technologies et langages de programmation utilisez-vous le plus fréquemment dans votre travail?",
         answer: "Azure DevOps, Python (Django), Javascript/Typescript (Angular), HTML et CSS.",
       },
       {
-        id: 4,
+        
         question: "À quoi ressemble une journée de travail typique pour vous?",
         answer: " Choisir le bon outil pour un problème spécifique. Il n'est pas toujours préférable d'utiliser les frameworks les plus modernes et les plus populaires.",
       },
       {
-        id: 5,
+        
         question: "Quels sont les plus grands défis auxquels vous êtes confronté dans votre travail?",
         answer: "Le plus grand défi est de moderniser constamment les projets conformément aux dernières mises à jour, ce qui implique un apprentissage continu, le suivi des tendances, et la formation des équipes pour s’adapter.",
       },
       {
-        id: 6,
+        
         question: "Comment restez-vous à jour avec les dernières technologies et tendances en programmation?",
         answer: " Principalement en lisant la documentation (notes de version), en regardant des vidéos sur YouTube, en lisant des articles et des blogs.",
       },
       {
-        id: 7,
+        
         question: "Quelles compétences considérez-vous comme les plus importantes pour réussir dans votre domaine?",
         answer: "La capacité à définir clairement ce qui doit être fait pour créer une solution ou résoudre un problème. Il arrive souvent que nous commencions à implémenter quelque chose sans avoir complètement compris ce qui doit être fait.",
       },
       {
-        id: 8,
+        
         question: "Pouvez-vous décrire un projet sur lequel vous avez travaillé et qui était particulièrement intéressant ou difficile?",
         answer: "Mon premier projet en solo était assez intéressant et stimulant. Il fallait afficher des stations de recharge pour voitures électriques sur une carte, colorer leurs marqueurs en fonction du niveau de consommation, et ouvrir une fenêtre avec des informations supplémentaires sur la station spécifique en cliquant dessus. Le client avait également besoin de voir les stations en construction. Comme il s'agissait du territoire des Pays-Bas, une grande quantité de données devait être traitée et convertie au format GeoJSON. Pour des raisons de performance, il était également nécessaire de mettre en place un système de mise en cache afin que l'utilisateur n'ait pas à attendre une minute pour une réponse du serveur. L'application était écrite en Django Web framework et son contenu était intégré dans une autre application. Et après quatre ans, tout fonctionne toujours sans problème.",
       },
       {
-        id: 9,
+        
         question: "Comment travaillez-vous en équipe et communiquez-vous avec les autres membres de l'équipe ou les clients?",
         answer: "Le travail en équipe fonctionne de manière à ce qu'il y ait un canal de communication dans l'application Teams pour chaque projet, où se trouvent tous les participants au projet. Avec les clients, en plus des réunions vidéo, la communication se fait principalement par e-mail.",
       },
       {
-        id: 10,
+        
         question: "Quel conseil donneriez-vous à quelqu'un qui veut devenir programmeur?",
         answer: "Beaucoup de persévérance et de dévouement. Se consacrer à la compréhension fondamentale de ce qui doit être fait et de ce que fait le code écrit. Au début, ne pas trop se fier aux solutions toutes faites, mais les implémenter soi-même (par exemple, les validations, les transformations de données, les normalisations) pour une meilleure compréhension. Choisir un langage strictement orienté objet et strict (par exemple, Java).",
       },
     ],
-    [
+    dev3:[
       {
-        id: 1,
+        
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
         answer: "Je m'appelle Sebastian Herrera. Je travaille chez Glimpact en tant que développeur Full Stack.",
       },
       {
-        id: 2,
+        
         question: "Je développe des solutions pour répondre aux besoins spécifiques de l'entreprise sur notre plateforme.  En tant que Full Stack, mes tâches couvrent des projets exclusivement front-end, exclusivement back-end ou combinant les deux, du début à la fin.",
       },
       {
-        id: 3,
+        
         question: "Quelles technologies et langages de programmation utilisez-vous le plus fréquemment dans votre travail?",
         answer: "J'utilise TypeScript pour le front-end et le back-end avec Node.js, ainsi que Java pour les back-ends nécessitant une logique plus complexe.",
       },
       {
-        id: 4,
+        
         question: "À quoi ressemble une journée de travail typique pour vous?",
         answer: "Ma journée commence par une réunion de stand-up, où je discute avec mes collègues de ce que j'ai fait la veille et de ce que je prévois de faire dans la journée. Ensuite, je vérifie si des pull requests nécessitent une revue ou si des tests doivent être effectués. Enfin, je consulte ma liste de tâches (TODO) pour décider si je poursuis un projet en cours ou si j'en commence un nouveau. <br> Quels sont les plus grands défis auxquels vous êtes confronté dans votre travail ? Certains jours, je peux être bloqué par un manque d'informations ou par une logique complexe. Cela nécessite de lire beaucoup de documentation et d'essayer différentes approches jusqu'à trouver la solution. Souvent, mes collègues plus expérimentés m'aident sur des sujets complexes, mais lorsqu'ils sont occupés, je dois me débrouiller seul.",
       },
       {
-        id: 5,
+        
         question: "Quels sont les plus grands défis auxquels vous êtes confronté dans votre travail?",
         answer: "  Certains jours, je peux être bloqué par un manque d'informations ou par une logique complexe. Cela   nécessite de lire beaucoup de documentation et d'essayer différentes approches jusqu'à trouver la  solution. Souvent, mes collègues plus expérimentés m'aident sur des sujets complexes, mais lorsqu'ils sont occupés, je dois me débrouiller seul.",
       },
       {
-        id: 6,
+        
         question: "Comment restez-vous à jour avec les dernières technologies et tendances en programmation?",
         answer: "J'utilise daily.dev et je suis abonné à des chaînes YouTube spécialisées dans le développement et la  programmation. En général, avant d’arriver au bureau, je prends le temps de lire des articles ou de  regarder des vidéos sur de nouvelles technologies. Quand une technologie m'intéresse, je fais un projet  personnel pendant mon temps libre. Si elle semble utile pour mon équipe, je la propose, et nous  l'analysons ensemble.",
       },
       {
-        id: 7,
+        
         question: "Quelles compétences considérez-vous comme les plus importantes pour réussir dans votre domaine?",
         answer: " Savoir se débrouiller. Il n'est pas nécessaire d'être le plus technique ou de connaître toutes les   syntaxes par cœur. Ce qui compte, c'est de livrer un projet fonctionnel. L'optimisation et les améliorations viennent après. <br> J'apprends très vite, et si quelque chose me pose problème, je finis toujours par le maîtriser. Les défis complexes me permettent de grandir professionnellement.",
       },
       {
-        id: 8,
+        
         question: "Pouvez-vous décrire un projet sur lequel vous avez travaillé et qui était particulièrement intéressant ou difficile?",
         answer: "Lorsque je travaille avec Java sur des algorithmes complexes, cela peut me prendre beaucoup de temps à réfléchir. Récemment, j'ai dû développer un algorithme pour créer des dossiers à partir d'un texte au format TSV. Ces dossiers, bien qu'écrits parallèlement, peuvent avoir des relations parent-enfant. J'ai dû analyser chaque ligne, valider chaque valeur et m'assurer qu'il n'y avait pas de relations cycliques ou récursives.",
       },
       {
-        id: 9,
+        
         question: "Comment travaillez-vous en équipe et communiquez-vous avec les autres membres de l'équipe ou les clients?",
         answer: "Cela dépend du projet. Si je collabore avec quelqu'un, je suis souvent responsable du back-end ou du front-end, et nous faisons régulièrement des réunions pour rester alignés, notamment sur les endpoints et les réponses API. <br> Si je travaille seul, je communique via Teams en cas de questions. En général, j'ai des référents pour différents types de problèmes : un senior Java pour le back-end, un senior front-end pour le front-end, et le CTO ou les ingénieurs pour les problématiques liées à la logique métier.",
       },
       {
-        id: 10,
+        
         question: "Quel conseil donneriez-vous à quelqu'un qui veut devenir programmeur?",
         answer: " Faites-le par passion, pas juste pour l'argent. C'est un métier très stimulant et flexible si vous aimez ce que vous faites. Personnellement, je n'ai jamais eu un jour où je me suis dit : 'Je n'ai pas envie detravailler.' Gardez aussi une curiosité et une humilité constantes. Il est facile de croire que l'on sait tout, mais la vérité, c'est qu'on ne finit jamais d'apprendre, et un collègue peut toujours avoir  un point de vue ou une solution que vous n'avez pas envisagée.",
       },
     ],
-  ];
+  };
 
 
   const developers = [
@@ -353,24 +352,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ];
 
+
+ 
+  
+ 
   developers.forEach(developer => {
 
+    //creating card for develpoers
+    //creating card for develpoers
     //creating card for develpoers
     const cardDev = document.createElement("div");
     cardDev.classList = "card";
     cardDev.id = developer.id;
 
     // Creating img
+    // Creating img
+    // Creating img
     const imgDev = document.createElement("img");
     imgDev.classList = "img";
     imgDev.src = developer.url;
 
     //creating h3 for names
+    //creating h3 for names
+    //creating h3 for names
     const h3Dev = document.createElement("h3");
     h3Dev.textContent = developer.name;
     // Creating h4 for job description
+    // Creating h4 for job description
+    // Creating h4 for job description
     const h4Dev = document.createElement("h4");
     h4Dev.textContent = developer.title;
+    // Creationg p tag for description
+    // Creationg p tag for description
     // Creationg p tag for description
 
     const pDev = document.createElement("p");
@@ -384,15 +397,29 @@ document.addEventListener("DOMContentLoaded", () => {
     cardContainerDev.appendChild(cardDev);
   })
 
+  // adding a classes and id after creating elements
+  // adding a classes and id after creating elements
+  // adding a classes and id after creating elements
 
+  const cards = document.querySelectorAll(".card");
+  const card1 = document.getElementById("card-1");
+  const card2 = document.getElementById("card-2");
+  const card3 = document.getElementById("card-3");
+  console.log(card1, card2, card3);
 
   // creating cards from list movies!
+  // creating cards from list movies!
+  // creating cards from list movies!
   movies.forEach(movie => {
+    //creating cards container with class cardTopMovies
+    //creating cards container with class cardTopMovies
     //creating cards container with class cardTopMovies
     const cardTopMovies = document.createElement("div");
     cardTopMovies.className = "cardTopMovies";
     cardTopMovies.id = movie.id;
 
+    //creating img and giving src from movie.img
+    //creating img and giving src from movie.img
     //creating img and giving src from movie.img
 
     const img = document.createElement("img");
@@ -401,10 +428,14 @@ document.addEventListener("DOMContentLoaded", () => {
     img.alt = movie.title;
 
     // creating title
+    // creating title
+    // creating title
     const movieTitle = document.createElement("h4");
     movieTitle.className = "h4TopMovies";
     movieTitle.textContent = movie.title;
 
+    //creating description
+    //creating description
     //creating description
 
     const movieDescription = document.createElement("p");
@@ -412,11 +443,15 @@ document.addEventListener("DOMContentLoaded", () => {
     movieDescription.textContent = movie.description;
 
     // creating drating
+    // creating drating
+    // creating drating
 
     const movieRating = document.createElement("p")
     movieRating.className = "topMovieRating";
     movieRating.textContent = movie.rating;
 
+    // adding elements to container
+    // adding elements to container
     // adding elements to container
 
     cardTopMovies.appendChild(img);
@@ -425,11 +460,15 @@ document.addEventListener("DOMContentLoaded", () => {
     cardTopMovies.appendChild(movieRating);
 
     // adding movie card to movie card container 
+    // adding movie card to movie card container 
+    // adding movie card to movie card container 
 
     myTopMovies.appendChild(cardTopMovies)
 
   })
 
+  //video start on hover  filmCard
+  //video start on hover  filmCard
   //video start on hover  filmCard
 
   bigCard4.addEventListener("mouseover", () => {
@@ -463,6 +502,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // when i click on the card add class to display big cards and display:none to small cards.
+  // when i click on the card add class to display big cards and display:none to small cards.
+  // when i click on the card add class to display big cards and display:none to small cards.
+
+  //remove claass of bigCard
+  //remove claass of bigCard
   //remove claass of bigCard
   function removeClass() {
     bigCards.forEach((bigCard) => {
@@ -471,6 +515,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Small cards display:none
+  // Small cards display:none
   // Small cards display:none
   function cardsNone() {
     cards.forEach((card) => {
@@ -496,7 +542,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // end of fonctions that display big cards and display:none small cards.
+  // end of fonctions that display big cards and display:none small cards.
+  // end of fonctions that display big cards and display:none small cards.
 
+  // when i click on button add class to display cards.
+  // when i click on button add class to display cards.
   // when i click on button add class to display cards.
   function RedisplayCards() {
     buttons.forEach((button) => {
@@ -516,7 +566,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //end of adding class function.
+  //end of adding class function.
+  //end of adding class function.
 
+  //calling functions
+  //calling functions
   //calling functions
 
   RedisplayCards();
