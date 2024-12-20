@@ -231,6 +231,20 @@ li {
   animation-range: entry 0% cover 50%;
 }
 
+#card-3 {
+  animation: bounce-in-right-2 ease;
+  animation-iteration-count: 1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+#card-1 {
+  animation: bounce-in-left ease;
+  animation-iteration-count: 1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
