@@ -13,11 +13,13 @@ const video2 = document.querySelector("#videoMarko");
 const video3 = document.querySelector("#videoSeba");
 const myTopMovies = document.querySelector(".myTopMovies");
 const cardContainerDev = document.querySelector(".cardContainer");
-
+const olSveta = document.querySelector("#questionsContainer-1");
+const olMarko = document.querySelector("#questionsContainer-2");
+const olSeba = document.querySelector("#questionsContainer-3");
 
 
 const questions = {
-    dev1:[
+    sveta:[
       {
         
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
@@ -69,7 +71,7 @@ const questions = {
         answer: "Ne courez pas après l’argent dès le début, mais concentrez-vous sur l’acquisition de connaissances. Les  efforts et le travail porteront leurs  l’apprentissage et de rester toujours engagé dans l’amélioration personnelle.",
       },
     ],
-  dev2: [
+  marko: [
       {
         
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
@@ -121,7 +123,7 @@ const questions = {
         answer: "Beaucoup de persévérance et de dévouement. Se consacrer à la compréhension fondamentale de ce qui doit être fait et de ce que fait le code écrit. Au début, ne pas trop se fier aux solutions toutes faites, mais les implémenter soi-même (par exemple, les validations, les transformations de données, les normalisations) pour une meilleure compréhension. Choisir un langage strictement orienté objet et strict (par exemple, Java).",
       },
     ],
-    dev3:[
+    seba:[
       {
         
         question: "Pouvez-vous vous présenter, nous dire où vous travaillez et quelle est votre position?",
@@ -173,6 +175,59 @@ const questions = {
       },
     ],
   };
+
+  questions.sveta.forEach(dev1 =>{
+    const li = document.createElement("li");
+    const details = document.createElement("details");
+    details.setAttribute("name" , questions)
+
+    const summary = document.createElement("summary");
+    const p = document.createElement("p");
+    p.classList = "anwser";
+    summary.textContent = dev1.question;
+    details.appendChild(summary);
+    details.appendChild(p);
+    p.textContent = dev1.answer;
+    li.appendChild(details);
+    olSveta.appendChild(li);
+
+  } )
+
+  questions.marko.forEach(dev2 =>{
+    const li = document.createElement("li");
+    const details = document.createElement("details");
+    details.setAttribute("name" , questions)
+
+    const summary = document.createElement("summary");
+    const p = document.createElement("p");
+    p.classList = "anwser";
+    summary.textContent = dev2.question;
+    details.appendChild(summary);
+    details.appendChild(p);
+    p.textContent = dev2.answer;
+    li.appendChild(details);
+    olMarko.appendChild(li);
+
+  } )
+
+  questions.marko.forEach(dev3 =>{
+    const li = document.createElement("li");
+    const details = document.createElement("details");
+    details.setAttribute("name" , questions)
+
+    const summary = document.createElement("summary");
+    const p = document.createElement("p");
+    p.classList = "anwser";
+    summary.textContent = dev3.question;
+    details.appendChild(summary);
+    details.appendChild(p);
+    p.textContent = dev3.answer;
+    li.appendChild(details);
+    olSeba.appendChild(li);
+
+  } )
+
+
 
 
   const developers = [

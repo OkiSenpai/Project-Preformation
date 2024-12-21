@@ -17,7 +17,7 @@ section {
 }
 
 .card:hover {
-  transform: scale(var(--scale-factor));
+  transform: scale(1.3);
 }
 
 * {
