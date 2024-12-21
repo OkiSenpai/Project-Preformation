@@ -24,6 +24,9 @@ section {
   margin: 0;
   padding: 0;
 }
+summary:hover{
+  cursor: pointer;
+}
 
 h4 {
   margin: 10px;
