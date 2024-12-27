@@ -21,7 +21,7 @@ const olSeba = document.querySelector("#questionsContainer-3");
 
 
 
-console.log();
+
 
 
   questions.sveta.forEach(dev1 =>{

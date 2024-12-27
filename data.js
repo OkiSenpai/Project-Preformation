@@ -167,7 +167,7 @@ const questions = {
     {
       id: "card-2",
       name: "Marko Vucic",
-      url: "assiets/photo/MarkoNekad.JPG",
+      url: "assiets/photo/MarkoNekad-removebg-preview.png",
       title: "full-stack chez Synechron",
       description: "Également un bon ami à moi qui a fait sport et éducation physique dans une fac en Serbie, il ne s'est pas retrouvé dedans donc il s'est redirigé vers la programmation. Actuellement employé Fullstack orionnté Back-end.",
     },
