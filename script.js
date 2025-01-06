@@ -1,33 +1,33 @@
 import { developers, movies, questions } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-const buttons = document.querySelectorAll(".button");
+  const buttons = document.querySelectorAll(".button");
 
-const bigCards = document.querySelectorAll(".bigCard");
-const bigCard4 = document.getElementById("card-4");
-const bigCard5 = document.getElementById("card-5");
-const bigCard6 = document.getElementById("card-6");
+  const bigCards = document.querySelectorAll(".bigCard");
+  const bigCard4 = document.getElementById("card-4");
+  const bigCard5 = document.getElementById("card-5");
+  const bigCard6 = document.getElementById("card-6");
 
-const cardFilm1 = document.getElementById("filmCard-1");
-const video = document.querySelector(".videoBackground");
-const video1 = document.querySelector("#videoSveta");
-const video2 = document.querySelector("#videoMarko");
-const video3 = document.querySelector("#videoSeba");
-const myTopMovies = document.querySelector(".myTopMovies");
-const cardContainerDev = document.querySelector(".cardContainer");
-const olSveta = document.querySelector("#questionsContainer-1");
-const olMarko = document.querySelector("#questionsContainer-2");
-const olSeba = document.querySelector("#questionsContainer-3");
-
-
+  const cardFilm1 = document.getElementById("filmCard-1");
+  const video = document.querySelector(".videoBackground");
+  const video1 = document.querySelector("#videoSveta");
+  const video2 = document.querySelector("#videoMarko");
+  const video3 = document.querySelector("#videoSeba");
+  const myTopMovies = document.querySelector(".myTopMovies");
+  const cardContainerDev = document.querySelector(".cardContainer");
+  const olSveta = document.querySelector("#questionsContainer-1");
+  const olMarko = document.querySelector("#questionsContainer-2");
+  const olSeba = document.querySelector("#questionsContainer-3");
 
 
 
 
-  questions.sveta.forEach(dev1 =>{
+
+
+  questions.sveta.forEach(dev1 => {
     const li = document.createElement("li");
     const details = document.createElement("details");
-    details.setAttribute("name" , questions)
+    details.setAttribute("name", questions)
 
     const summary = document.createElement("summary");
     const p = document.createElement("p");
@@ -39,12 +39,12 @@ const olSeba = document.querySelector("#questionsContainer-3");
     li.appendChild(details);
     olSveta.appendChild(li);
 
-  } )
+  })
 
-  questions.marko.forEach(dev2 =>{
+  questions.marko.forEach(dev2 => {
     const li = document.createElement("li");
     const details = document.createElement("details");
-    details.setAttribute("name" , questions)
+    details.setAttribute("name", questions)
 
     const summary = document.createElement("summary");
     const p = document.createElement("p");
@@ -56,12 +56,12 @@ const olSeba = document.querySelector("#questionsContainer-3");
     li.appendChild(details);
     olMarko.appendChild(li);
 
-  } )
+  })
 
-  questions.marko.forEach(dev3 =>{
+  questions.seba.forEach(dev3 => {
     const li = document.createElement("li");
     const details = document.createElement("details");
-    details.setAttribute("name" , questions)
+    details.setAttribute("name", questions)
 
     const summary = document.createElement("summary");
     const p = document.createElement("p");
@@ -73,16 +73,16 @@ const olSeba = document.querySelector("#questionsContainer-3");
     li.appendChild(details);
     olSeba.appendChild(li);
 
-  } )
+  })
 
 
 
 
- 
 
- 
-  
- 
+
+
+
+
   developers.forEach(developer => {
 
     //creating card for develpoers
